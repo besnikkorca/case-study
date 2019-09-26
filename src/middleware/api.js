@@ -1,6 +1,6 @@
 import request from "../shared/request";
 
-const CALL_API = Symbol('PERDOO API')
+const CALL_API = Symbol('DATA API')
 
 const middleware = () => (next) => async(action) => {
   const ACTION_API = action[CALL_API]

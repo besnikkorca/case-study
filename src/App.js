@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Layout
-        title="Perdoo case study"
+        title="Case study"
       >
         <Switch>
         <Route
