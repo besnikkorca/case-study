@@ -22,6 +22,7 @@ const EntitySingle = (props) => {
 
   useEffect(() => {
     getEntity(entity, id)
+    return () => cleanGetEntity()
   }, [getEntity, entity, id]);
 
   const printObjectProps = (object) => {

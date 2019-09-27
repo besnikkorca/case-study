@@ -22,6 +22,7 @@ const EntityList = (props) => {
 
   useEffect(() => {
     getEntitiesList(entity, page)
+    return () => cleanGetEntitiesList()
   }, [getEntitiesList, entity, page]);
 
   const handleChangePage = (_, newPage) => {
